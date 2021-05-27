@@ -9,4 +9,3 @@ game.Workspace.Gravity -- the default Gravity call is the workspace property
 game.Workspace.Gravity.BrickColor = BrickColor.new("Royal purple")
 --INSTEAD do this. This WILL WORK for the part.
 game.Workspace:FindFirstChild("Gravity").BrickColor = BrickColor.new("Royal purple")
-
