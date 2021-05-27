@@ -1,11 +1,15 @@
--- Scripting Basics in the context of ROBLOX Studio.
--- Covers transparency, anchor, booleans, and materials.
+-- Covers basics, transparency, collisions, anchors, booleans, and materials.
 
 -- game = parent
 -- workspace = child
 
+-- 2 Different Ways to Reference a Part
+-- For this example, brick_name is a part.
+game.Workspace.brick_name.Transparency = 1
+-- OR
+game.Workspace["brick_name"].Transparency = 1
+
 -- Set transparency
--- brick_name is a part.
 game.Workspace.brick_name.Transparency = 1
 
 -- Set material
@@ -18,3 +22,6 @@ game.Workspace.brick_name.Material = Enum.Materal.Granite
 game.Workspace.brick_name.Anchored = false
 
 -- The checkmarks in ROBLOX Studio are boolean values!
+
+-- Collisons
+game.Workspace.brick_name.CanCollide = false
